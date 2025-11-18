@@ -16,7 +16,7 @@ print("   TRAINING STARTED")
 print("==============================\n")
 
 # 1️⃣ Load Dataset
-df = pd.read_csv("cotton-crop-disease-dataset.csv")
+df = pd.read_csv("cotton_data")
 print("Columns:", df.columns.tolist())
 
 # 2️⃣ Encode Categorical Columns
@@ -75,6 +75,7 @@ print("   TRAINING COMPLETED")
 print("==============================")
 print(f"✔ Best Model: {best_model_name} with Accuracy: {best_accuracy*100:.2f}%")
 print("🎉 Files Saved: best_model.pkl, encoders.pkl\n")
+
 
 
 
