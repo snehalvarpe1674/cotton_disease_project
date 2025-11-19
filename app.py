@@ -10,7 +10,7 @@ model = pickle.load(open("best_model.pkl", "rb"))
 encoders = pickle.load(open("encoders.pkl", "rb"))
 
 # Load dataset to get dropdown values
-df = pd.read_csv("cotton_data")
+df = pd.read_csv("cotton_data.csv")
 feature_columns = ['Crop', 'Crop Stage']
 
 dropdown_values = {col: sorted(df[col].unique()) for col in feature_columns}
@@ -44,6 +44,7 @@ def predict():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
 
 
 
